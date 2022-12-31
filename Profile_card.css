@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+:root{
+    --primary_color:#f2726a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(mediaval.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    background: #242628;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.card_image{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary_color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    transform: translateY(25px);
+    transition: 0.25s;
+}
+
+.card h2{
+    margin-top: 35px;
+}
+
+.card h2{
+    color: white;
+}
+
+.card p{
+    color: var(--primary_color);
+}
+
+.card_social{
+    margin: 15px 0;
+}
+
+.card_social a{
+    color: silver;
+    margin: 10px 15px;
+    font-size: 25px;
+    transition: 0.25s;
+}
+
+.card button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--primary_color);
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.card button:hover{
+    background: #f2726a;
+}
+
+.card_social #knight:hover{
+    color: red;
+    font-size: 50px;
+}
+
+.card_social #witch:hover{
+    color: royalblue;
+    font-size: 50px;
+}
+
+.card_social #Rogue:hover{
+    color: gold;
+    font-size: 50px;
+}
+
+.card_image:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    margin: 0 auto;
+    transform: unset;
+}
+
+.job1_BG, .job2_BG, .job3_BG{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job_inner{
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.job_body{
+    height: 200px;
+    font-size: 25px;
+    position: relative;
+
+}
+
+.job_body h2{
+    color: yellow;
+    text-align: center;
+}
+
+.job_body p{
+    color: red;
+    padding-left: 239px;
+    margin-top: 22px;
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+.job_body button{
+    width: 65px;
+    height: 30px;
+    border: 3px solid blueviolet;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    background: powderblue;
+    object-position: left;
+    position: absolute;
+    top: 165px;
+    left: 320px;
+    transition: 0.25s;
+}
+
+.job_body button:hover{
+    scale: 1.2;
+}
+
+#knight2{
+    background-image: url(mediaval_knight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wizard2{
+    background-image: url(mediaval_wizard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#thief2{
+    background-image: url(mediaval_thief.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes animation_show {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
